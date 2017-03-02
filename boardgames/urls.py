@@ -21,6 +21,7 @@ from django.contrib.auth.views import login, logout
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^user/', include('user.urls')),
+    url(r'^tictactoe/', include('tictactoe.urls')),
     url(r'^$', views.home, name='boardgames_home'),
     url(r'^login/$', login, {'template_name': 'login.html'}, name='boardgames_login'),
     url(r'^logout/$', logout, {'next_page': 'boardgames_home'}, name='boardgames_logout'),
