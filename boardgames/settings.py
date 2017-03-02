@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'main',
     'tictactoe',
     'user',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -124,3 +125,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 LOGIN_REDIRECT_URL = 'user_home'
 LOGIN_URL = '/login/'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
